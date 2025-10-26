@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Info Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: white;
+      padding: 25px 35px;
+      border-radius: 15px;
+     
+      width: 360px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+     
+
+    .radio-group {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .radio-group span {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .radio-group label {
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    button {
+      background-color: #4e54c8;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+     </style>
+</head>
+<body>
+  <form action="about.html" method="post">
+<h1><u>radio button</u></h1>
+    <h2>Personal Info</h2>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="number" placeholder="Age" min="1" max="100" required>
+
+    <div class="radio-group">
+      <span>Gender</span>
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+
+    <div class="radio-group">
+      <span>Marital Status</span>
+      <label><input type="radio" name="marital" value="Single"> Single</label>
+      <label><input type="radio" name="marital" value="Married"> Married</label>
+      <label><input type="radio" name="marital" value="Divorced"> Divorced</label>
+    </div>
+
+
+    <input type="email" placeholder="Email">
+
+    <select>
+      <option value="">Select Country</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+    </select>
+<h1>checkbox</h1>
+<h2><u>tick which u like</u> </h2>
+<legend>fruits</legend>
+<input type="checkbox"id="fruit1"name="fruit" value="apple">
+<label for="fruit1">apple</label><br>
+
+<input type="checkbox"id="fruit2"name="fruit" value="banana">
+<label for="fruit2">banana</label><br>
+
+<input type="checkbox"id="fruit3"name="fruit" value="mango">
+<label for="fruit3">mango</label><br>
+
+<input type="checkbox"id="fruit4"name="fruit" value="grapes">
+<label for="fruit4">grapes</label><br>
+
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
